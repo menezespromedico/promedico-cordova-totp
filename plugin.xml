@@ -38,12 +38,12 @@
   <!-- android -->
   <platform name="android">
 
-    <source-file src="src/android/org/jboss/aerogear/cordova/android/aerogearPlugin.java"
+    <source-file src="src/android/org/jboss/aerogear/cordova/android/PromedicoPlugin.java"
                  target-dir="src/org/jboss/aerogear/cordova/android"/>
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="aerogearPlugin">
-        <param name="android-package" value="org.jboss.aerogear.cordova.android.aerogearPlugin" />
+      <feature name="PromedicoPlugin">
+        <param name="android-package" value="org.jboss.aerogear.cordova.android.PromedicoPlugin" />
       </feature>
     </config-file>
 
