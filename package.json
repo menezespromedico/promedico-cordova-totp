@@ -1,0 +1,34 @@
+{
+  "name": "promedico-cordova-totp",
+  "version": "0.0.3",
+  "description": "Generates a one time password",
+  "cordova": {
+    "id": "org.jboss.promedico.cordova.totp",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menezespromedico/promedico-cordova-totp.git"
+  },
+  "keywords": [
+    "cordova",
+    "promedico",
+    "time",
+    "password",
+    "otp",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "mmenezes",
+  "license": "Apache2"
+}

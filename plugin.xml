@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="promedico-cordova-totp"
+        version="0.0.3">
+
+  <name>Promedico TOTP</name>
+  <description>Generates a one time password</description>
+  <license>MIT</license>
+  <keywords>cordova,promedico,time,password,otp</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+    <engine name="cordova-android" version=">=3.7.2" />
+  </engines>
+
+  <dependency id="phonegap-plugin-barcodescanner"/>
+
+  <js-module src="www/promedico-opt.js" name="promedico.Totp">
+    <clobbers target="cordova.plugins.totp"/>
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="promedicoPlugin">
+        <param name="ios-package" value="CDVpromedicoPlugin"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/CDVpromedicoPlugin.h" />
+    <source-file src="src/ios/CDVpromedicoPlugin.m"/>
+
+    <header-file src="src/ios/AGOtp.h"/>
+    <header-file src="src/ios/AGTotp.h"/>
+    <header-file src="src/ios/AGBase32.h"/>
+    <framework src="Foundation.framework"/>
+    <source-file src="src/ios/libpromedico-otp.a" framework="true"/>
+  </platform>
+
+  <!-- android -->
+  <platform name="android">
+
+    <source-file src="src/android/org/jboss/aerogear/cordova/android/aerogearPlugin.java"
+                 target-dir="src/org/jboss/aerogear/cordova/android"/>
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="aerogearPlugin">
+        <param name="android-package" value="org.jboss.aerogear.cordova.android.aerogearPlugin" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/aerogear-otp-java-1.0.0.jar" target-dir="libs"/>
+  </platform>
+</plugin>
