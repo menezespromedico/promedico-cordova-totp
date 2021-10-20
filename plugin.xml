@@ -23,19 +23,18 @@
   <!-- ios -->
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
-      <feature name="promedicoPlugin">
-        <param name="ios-package" value="CDVpromedicoPlugin"/>
+      <feature name="PromedicoPlugin">
+        <param name="ios-package" value="CDVPromedicoPlugin"/>
       </feature>
     </config-file>
 
-    <header-file src="src/ios/CDVpromedicoPlugin.h" />
-    <source-file src="src/ios/CDVpromedicoPlugin.m"/>
+    <header-file src="src/ios/CDVPromedicoPlugin.h" />
+    <source-file src="src/ios/CDVPromedicoPlugin.m"/>
 
-    <header-file src="src/ios/AGOtp.h"/>
-    <header-file src="src/ios/AGTotp.h"/>
-    <header-file src="src/ios/AGBase32.h"/>
+    <header-file src="src/ios/TOTPGenerator.h"/>
+    <header-file src="src/ios/OTPGenerator.h"/>
+    <header-file src="src/ios/MF_Base32Additions.h"/>
     <framework src="Foundation.framework"/>
-    <source-file src="src/ios/libpromedico-otp.a" framework="true"/>
   </platform>
 
   <!-- android -->
