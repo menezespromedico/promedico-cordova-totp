@@ -31,8 +31,8 @@ import static android.content.SharedPreferences.Editor;
 /**
  * @author edewit@redhat.com
  */
-public class AeroGearPlugin extends CordovaPlugin {
-  public static final String TAG = AeroGearPlugin.class.getSimpleName();
+public class PromedicoPlugin extends CordovaPlugin {
+  public static final String TAG = PromedicoPlugin.class.getSimpleName();
 
   private static final String OTP = "generateOTP";
   private static final String STORE = "storeSecret";

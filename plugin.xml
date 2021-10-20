@@ -14,8 +14,6 @@
     <engine name="cordova-android" version=">=3.7.2" />
   </engines>
 
-  <dependency id="phonegap-plugin-barcodescanner"/>
-
   <js-module src="www/promedico-opt.js" name="promedico.Totp">
     <clobbers target="cordova.plugins.totp"/>
   </js-module>
