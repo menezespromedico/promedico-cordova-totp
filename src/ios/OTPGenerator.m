@@ -80,7 +80,7 @@ NSString *const kOTPGeneratorSHAMD5Algorithm = @"MD5";
     if (!goodAlgorithm || digits_ > 8 || digits_ < 6 || !secret_) {
       NSLog(@"Bad args digits(min 6, max 8): %d secret: %@ algorithm: %@",
                  digits_, secret_, algorithm_);
-      [self release];
+      //[self release];
       self = nil;
     }
   }
@@ -90,7 +90,7 @@ NSString *const kOTPGeneratorSHAMD5Algorithm = @"MD5";
 - (void)dealloc {
   self.algorithm = nil;
   self.secret = nil;
-  [super dealloc];
+  //[super dealloc];
 }
 
 // Must be overriden by subclass.
@@ -115,7 +115,6 @@ NSString *const kOTPGeneratorSHAMD5Algorithm = @"MD5";
     alg = kCCHmacAlgMD5;
     hashLength = CC_MD5_DIGEST_LENGTH;
   } else {
-    //_GTMDevAssert(NO, @"Unknown algorithm");
     return nil;
   }
 

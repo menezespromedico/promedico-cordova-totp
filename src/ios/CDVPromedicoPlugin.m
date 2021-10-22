@@ -16,6 +16,9 @@
  */
 
 #import "CDVPromedicoPlugin.h"
+#import "TOTPGenerator.h"
+#import "OTPGenerator.h"
+#import "MF_Base32Additions.h"
 
 @implementation CDVPromedicoPlugin
 
@@ -27,8 +30,6 @@
         NSDate *now = [NSDate date];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-        NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
-        [dateFormatter setTimeZone:timeZone];
         
         long timestamp = (long)[now timeIntervalSince1970];        
         NSInteger digits = 6;

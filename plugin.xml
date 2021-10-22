@@ -30,8 +30,14 @@
     <source-file src="src/ios/CDVPromedicoPlugin.m"/>
 
     <header-file src="src/ios/TOTPGenerator.h"/>
+    <source-file src="src/ios/TOTPGenerator.m"/>
+
     <header-file src="src/ios/OTPGenerator.h"/>
+    <source-file src="src/ios/OTPGenerator.m"/>
+
     <header-file src="src/ios/MF_Base32Additions.h"/>
+    <source-file src="src/ios/MF_Base32Additions.m"/>
+
     <framework src="Foundation.framework"/>
   </platform>
 

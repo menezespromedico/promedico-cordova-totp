@@ -1,7 +1,32 @@
 {
-  "name": "promedico-cordova-totp",
-  "version": "0.0.3",
-  "description": "Generates a one time password",
+  "_from": "git+https://github.com/menezespromedico/promedico-cordova-totp.git",
+  "_id": "promedico-cordova-totp@0.0.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/promedico-cordova-totp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/menezespromedico/promedico-cordova-totp.git",
+    "rawSpec": "https://github.com/menezespromedico/promedico-cordova-totp.git",
+    "saveSpec": "git+https://github.com/menezespromedico/promedico-cordova-totp.git",
+    "fetchSpec": "https://github.com/menezespromedico/promedico-cordova-totp.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/menezespromedico/promedico-cordova-totp.git#2ef60f9f49de7e3baf3ac882c9aa467ed55f0c91",
+  "_spec": "https://github.com/menezespromedico/promedico-cordova-totp.git",
+  "_where": "/Users/promedicoict/promeauth",
+  "author": {
+    "name": "mmenezes"
+  },
+  "bugs": {
+    "url": "https://github.com/menezespromedico/promedico-cordova-totp/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "org.jboss.promedico.cordova.totp",
     "platforms": [
@@ -9,10 +34,15 @@
       "android"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/menezespromedico/promedico-cordova-totp.git"
-  },
+  "deprecated": false,
+  "description": "Generates a one time password",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "homepage": "https://github.com/menezespromedico/promedico-cordova-totp#readme",
   "keywords": [
     "cordova",
     "promedico",
@@ -23,12 +53,11 @@
     "cordova-ios",
     "cordova-android"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.4.0"
-    }
-  ],
-  "author": "mmenezes",
-  "license": "Apache2"
+  "license": "Apache2",
+  "name": "promedico-cordova-totp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menezespromedico/promedico-cordova-totp.git"
+  },
+  "version": "0.0.3"
 }

@@ -18,8 +18,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
-#import "TOTPGenerator.h"
-#import "MF_Base32Additions.h"
+
 
 @interface CDVPromedicoPlugin : CDVPlugin
 
